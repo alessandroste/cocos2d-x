@@ -34,11 +34,7 @@
 #include <mutex>
 #include <string>
 #include <vector>
-#ifdef OPENAL_PLAIN_INCLUDES
 #include <al.h>
-#else
-#include <AL/al.h>
-#endif
 #include "platform/CCPlatformMacros.h"
 #include "audio/win32/AudioMacros.h"
 
