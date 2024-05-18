@@ -24,6 +24,7 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.lib;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -72,6 +73,7 @@ public class Cocos2dxLocalStorage {
         }
     }
     
+    @SuppressLint("Range")
     public static String getItem(String key) {
         String ret = null;
         try {

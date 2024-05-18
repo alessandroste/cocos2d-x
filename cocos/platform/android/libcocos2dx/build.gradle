@@ -1,9 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
+    buildFeatures.aidl = true
 
     defaultConfig {
+        namespace "org.cocos2dx.lib"
+        compileSdk PROP_TARGET_SDK_VERSION.toInteger()
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
         versionCode 1
